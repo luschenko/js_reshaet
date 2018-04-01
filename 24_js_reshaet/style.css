@@ -1,0 +1,17 @@
+.main-block {
+    width: 560px;
+    height: 560px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+.block {
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.black {
+    background: #000;
+}
+.white {
+    background: #fff;
+}
