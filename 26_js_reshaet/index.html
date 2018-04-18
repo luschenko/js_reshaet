@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+</head>
+<body>
+    <input type="text" class="message">
+    <button>Send</button>
+    <hr>
+    <div class="panel"></div>
+   
+
+<script>
+var message = document.querySelector('.message');
+var btn = document.querySelector('button');
+var panel = document.querySelector('.panel');
+
+var conn = new WebSocket('ws://127.0.0.1:8777');
+conn.onopen = function(e) {
+    console.log("Connection established!");
+};
+conn.onmessage = function(e) {
+    console.log(e.data);
+    panel.innerHTML += e.data + '<br>';
+};
+//---------------------------
+btn.onclick = function(){
+    var msg = message.value;
+    conn.send(msg);
+}
+
+</script>
+</body>
+</html>
