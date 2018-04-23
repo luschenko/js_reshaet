@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="css/library.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center col-lg-12">Library</h1>
+
+            <div class="col-lg-12 text-right">
+                <button class="book-add btn btn-primary" data-toggle="modal" data-target="#modal-add-book">Add book</button>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="row book-panel">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-add-book" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add book to library</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="book-name" class="col-sm-2 col-form-label">Book:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="book-name" id="book-name" value="Колобок">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="book-author" class="col-sm-2 col-form-label">Author:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="book-author" id="book-author" value="Пример Примерыч">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="book-year" class="col-sm-2 col-form-label">Year:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="book-year" id="book-year" value="2018">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                                <label for="book-cover" class="col-sm-2 col-form-label">Cover:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="book-cover" id="book-cover" value="https://i.livelib.ru/boocover/1000008975/o/ce3c/bez_avtora__Kolobok.jpeg">
+                                </div>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="modal-add-book-ok">Add book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="js/library.js"></script>
+</body>
+
+</html>
